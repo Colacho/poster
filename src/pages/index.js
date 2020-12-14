@@ -1,5 +1,4 @@
 import * as React from "react";
-import "tailwindcss/tailwind.css";
 
 // styles
 const pageStyles = {
@@ -72,7 +71,7 @@ const IndexPage = () => {
   return (
     <main style={pageStyles}>
       <title>Home Page</title>
-      <h1 style={headingStyles} className="bg-yellow-500">
+      <h1 style={headingStyles} className="text-red-800">
         Congratulations
         <br />
         <span style={headingAccentStyles}>— you just made a Gatsby site!</span>

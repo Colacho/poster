@@ -17,6 +17,8 @@
   "license": "0BSD",
   "dependencies": {
     "autoprefixer": "^10.1.0",
+    "cloudinary-core": "^2.11.3",
+    "cloudinary-react": "^1.6.8",
     "gatsby": "^2.26.1",
     "gatsby-image": "^2.8.0",
     "gatsby-plugin-image": "^0.3.1",

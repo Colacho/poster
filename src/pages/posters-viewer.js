@@ -35,7 +35,7 @@ const IndexPage = () => {
         {error && <div>{error}</div>}
         {!error && !assets && <div>Loading</div>}
         {assets && (
-          <div className="container mx-auto grid grid-cols-4 gap-4 p-4">
+          <div className="container mx-auto grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 p-6">
             {assets.map((i) => {
               return (
                 <div key={i.public_id}>

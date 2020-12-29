@@ -1,6 +1,6 @@
-import React from "react";
-import Img from "gatsby-image";
-import { graphql, useStaticQuery } from "gatsby";
+import React from 'react';
+import Img from 'gatsby-image';
+import { graphql, useStaticQuery } from 'gatsby';
 
 const PosterGrid = () => {
   const data = useStaticQuery(graphql`
@@ -21,7 +21,7 @@ const PosterGrid = () => {
 
   console.log(data);
   return (
-    <div className="bg-yellow-100">
+    <div className="">
       <div className="container mx-auto grid grid-cols-4 gap-4 p-4">
         {data.image.nodes.map((i) => {
           const title = i.childImageSharp.fluid.originalName;

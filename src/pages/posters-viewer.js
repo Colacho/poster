@@ -1,5 +1,5 @@
-import React, {useState, useEffect} from "react";
-import Layout from "../components/layout";
+import React, { useState, useEffect } from 'react';
+import Layout from '../components/layout';
 import { Cloudinary } from 'cloudinary-core';
 import { Image } from 'cloudinary-react';
 
@@ -24,21 +24,23 @@ const IndexPage = () => {
   };
 
   useEffect(() => {
-    if(!assets){
+    if (!assets) {
       getImages();
     }
   }, [assets]);
 
   return (
     <Layout>
-      <div className="bg-yellow-100">
-        { error && <pre>{error}</pre> }
-        { assets && (
+      <div className="">
+        {error && <div>{error}</div>}
+        {!error && !assets && <div>Loading</div>}
+        {assets && (
           <div className="container mx-auto grid grid-cols-4 gap-4 p-4">
             {assets.map((i) => {
               return (
                 <div key={i.public_id}>
                   <Image
+                    className="rounded"
                     width="400"
                     height="auto"
                     cloudName="dlttjlit3"

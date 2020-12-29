@@ -12,12 +12,12 @@ exports.createPages = async ({ actions: { createPage }, graphql }) => {
   `);
 
   result.data.allImageSharp.nodes.forEach((i) => {
-    const posters = i.fluid.originalName.split(" ").join("").slice(0, -4);
+    const posters = i.fluid.originalName.split(' ').join('').slice(0, -4);
     const posterName = i.fluid.originalName;
 
     createPage({
       path: `/poster/${posters}/`,
-      component: require.resolve("./src/templates/poster.js"),
+      component: require.resolve('./src/templates/poster.js'),
       context: {
         slug: posterName,
       },

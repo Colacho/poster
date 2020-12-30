@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html,
+main,
+body,
+#___gatsby,
+#gatsby-focus-wrapper {
+  height: 100%;
+}

@@ -4,7 +4,9 @@ import Layout from '../components/layout';
 const IndexPage = () => {
   return (
     <main>
-      <Layout />
+      <Layout>
+        <div className="text-white h-screen text-center">Some text here</div>
+      </Layout>
     </main>
   );
 };

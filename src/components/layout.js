@@ -8,6 +8,10 @@ const Layout = ({ children }) => {
   return (
     <div className="bg-black">
       <Helmet>
+        <html className="h-screen"></html>
+        <body className="h-screen"></body>
+        <main className="h-screen"></main>
+
         <script
           src="https://widget.cloudinary.com/v2.0/global/all.js"
           type="text/javascript"

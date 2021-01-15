@@ -5,7 +5,7 @@ const IndexPage = () => {
   return (
     <main>
       <Layout>
-        <div className="text-white h-screen text-center">Some text here</div>
+        <div className="text-black h-screen text-center">Some text here</div>
       </Layout>
     </main>
   );

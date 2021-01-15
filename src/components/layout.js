@@ -3,10 +3,11 @@ import { Helmet } from 'react-helmet';
 import Header from './header';
 import type from 'prop-types';
 import Footer from './footer';
+import background from '../images/fondoPosters1.jpg';
 
 const Layout = ({ children }) => {
   return (
-    <div className="bg-black">
+    <div className="bg-cover bg-center">
       <Helmet>
         <html className="h-screen"></html>
         <body className="h-screen"></body>
@@ -18,7 +19,9 @@ const Layout = ({ children }) => {
         ></script>
       </Helmet>
       <Header />
-      <main>{children}</main>
+      <main className="bg-cover bg-center" style={{ backgroundImage: `url(${background})` }}>
+        {children}
+      </main>
       <Footer />
     </div>
   );
